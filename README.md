@@ -33,4 +33,3 @@ Si no sabes qué versión de Python tienes instalada, puedes verificarlo en la t
 
 NOTAS:
 - Si en algún momento el comando “python” no funciona correctamente, verifica si tienes Python 3 instalado o usa “python3” como se indicó anteriormente.
-- En Windows, no necesitas usar "Command + clic" como en Mac. Solo debes hacer clic directamente en la URL que se muestra en la terminal.
