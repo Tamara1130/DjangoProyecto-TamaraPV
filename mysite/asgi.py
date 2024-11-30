@@ -1,16 +1,16 @@
 """
-ASGI config for mysite project.
+Configuración ASGI para el proyecto mysite.
 
-It exposes the ASGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/5.1/howto/deployment/asgi/
+Este archivo pone a ASGI como una variable a nivel de módulo llamada ``application``.
 """
 
-import os
+import os  # Importamos este modulo para interactuar con las variables de entorno
 
+# Importamos la función que nos permite obtener ASGI de Django
 from django.core.asgi import get_asgi_application
 
+# Establecemos el modulo de configuración de Django que se usara en esta seccion
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
 
+# Creamos la aplicación ASGI (interfaz de servidor para aplicaciones web)
 application = get_asgi_application()
