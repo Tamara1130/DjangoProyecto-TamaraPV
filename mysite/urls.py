@@ -1,27 +1,23 @@
 """
-URL configuration for mysite project.
+Configuración de URLs para el proyecto mysite.
 
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/5.1/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+La lista `urlpatterns` enruta las URLs a las vistas correspondientes.
 """
-from django.contrib import admin
-from django.urls import path, include
-from app.views import random_graphs  # Import the view directly
 
+# Importamos las funciones necesarias
+from django.contrib import admin  # Interfaz administrativa de Django
+from django.urls import path, include  # path: para definir rutas
+from app.views import random_graphs  # Importamos la vista de "random_graphs"
 
+# Patrones de URLs para el proyecto
 urlpatterns = [
+    # Ruta para la interfaz de administración
     path('admin/', admin.site.urls),
-    path('', random_graphs, name='random_graphs'),  # Use the app view as the root URL
+    
+    # Ruta raíz del proyecto asignada a la vista "random_graphs" de la app
+    path('', random_graphs, name='random_graphs'),
+    
+    # Incluimos las URLs definidas en la aplicación "app" (esto busca un archivo "urls.py" dentro de la carpeta "app").
     path('app/', include('app.urls')),
 ]
 
