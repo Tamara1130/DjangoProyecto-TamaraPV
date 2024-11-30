@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Se especifica el tipo de documento como HTML5 -->
     <meta charset="UTF-8">
+    <!-- Etiqueta tipo meta para configurar la visualización en dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que se ve en la pestaña del navegador -->
     <title>Gráficas Generadas</title>
 </head>
 <body>
+    <!-- Titulo principal de la página -->
     <h1>Gráficas Aleatorias</h1>
 
+    <!-- Titulo para la gráfica de líneas -->
     <h2>Gráfica de Líneas</h2>
+    <!-- Muestra la gráfica de líneas usando la cadena de texto base64 generada por Django -->
     <img src="data:image/png;base64,{{ graficas.linea }}" alt="Gráfica de Líneas">
 
+    <!-- Titulo para la gráfica de barras -->
     <h2>Gráfica de Barras</h2>
+    <!-- Muestra la gráfica de barras usando la cadena de texto base64 generada por Django -->
     <img src="data:image/png;base64,{{ graficas.barras }}" alt="Gráfica de Barras">
 
+    <!-- Titulo para la gráfica de pastel -->
     <h2>Gráfica de Pastel</h2>
+    <!-- Muestra la gráfica de pastel usando la cadena de texto base64 generada por Django -->
     <img src="data:image/png;base64,{{ graficas.pastel }}" alt="Gráfica de Pastel">
 
+    <!-- Titulo para el histograma -->
     <h2>Histograma</h2>
+    <!-- Muestra el histograma usando la cadena de texto base64 generada por Django -->
     <img src="data:image/png;base64,{{ graficas.histograma }}" alt="Histograma">
 
+    <!-- Titulo para la gráfica de cajas -->
     <h2>Gráfica de Cajas</h2>
+    <!-- Muestra la gráfica de cajas usando la cadena de texto base64 generada por Django -->
     <img src="data:image/png;base64,{{ graficas.cajas }}" alt="Gráfica de Cajas">
 
+    <!-- Titulo para la gráfica de dispersión -->
     <h2>Gráfica de Dispersión</h2>
+    <!-- Muestra la gráfica de dispersión usando la cadena de texto base64 generada por Django -->
     <img src="data:image/png;base64,{{ graficas.dispersión }}" alt="Gráfica de Dispersión">
 
 </body>
