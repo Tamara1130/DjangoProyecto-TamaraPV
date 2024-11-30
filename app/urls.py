@@ -8,7 +8,7 @@ from app.views import random_graphs
 # Se definen las URLs de la aplicación y se asocian con las vistas
 urlpatterns = [
     # Se define la URL "random-graphs/" que estará asociada con la vista "random_graphs"
-    # Cuando se accede a esta URL, se ejecutará la función "random_graphs" en views.py
+    # Cuando se accede a esta URL se ejecutará la función "random_graphs" en views.py
     path('random-graphs/', random_graphs, name='random_graphs'),
 ]
 
