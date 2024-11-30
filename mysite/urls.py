@@ -14,7 +14,7 @@ urlpatterns = [
     # Ruta para la interfaz de administración
     path('admin/', admin.site.urls),
     
-    # Ruta raíz del proyecto asignada a la vista "random_graphs" de la app
+    # Ruta del proyecto asignada a la vista "random_graphs" de la app
     path('', random_graphs, name='random_graphs'),
     
     # Incluimos las URLs definidas en la aplicación "app" (esto busca un archivo "urls.py" dentro de la carpeta "app").
