@@ -28,7 +28,7 @@ Si no sabes qué versión de Python tienes instalada, puedes verificarlo en la t
 6. Revisa la URL que aparece en la terminal una vez que el servidor esté corriendo. Haz clic en la URL que se muestra o copiala y pégala en tu navegador.
 
 7. ¡Listo! La aplicación se estará mostrando en tu navegador.
-8. 
+
 
 REQUERIMIENTOS:
 I. Librerias requeridas para ejecutar este programa
