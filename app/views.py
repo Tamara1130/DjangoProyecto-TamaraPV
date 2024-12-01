@@ -29,7 +29,7 @@ def grafica_barras():
     """Genera una gráfica de barras sobre el índice de empleabilidad por estado."""
     fig, ax = plt.subplots()
     estados = ['Aguascalientes', 'Jalisco', 'CDMX', 'Nuevo León']  # Estados
-    empleabilidad = [85, 78, 92, 88]  # Índice de empleabilidad (porcentaje).
+    empleabilidad = [85, 78, 92, 88]  # Índice de empleabilidad (en porcentaje)
     ax.bar(estados, empleabilidad, color='green')  # Barras
     ax.set_title("Índice de Empleabilidad por Estado")  # Título
     ax.set_xlabel("Estados")  # Etiqueta eje X
@@ -54,7 +54,7 @@ def histograma():
     fig, ax = plt.subplots()
     regiones = ['Norte', 'Centro', 'Sur', 'Occidente']  # Regiones
     tasas = [12, 15, 10, 14]  # Tasa de natalidad (nacimientos por cada mil habitantes)
-    ax.bar(regiones, tasas, color='orange', edgecolor='black')  # Histograma de barras
+    ax.bar(regiones, tasas, color='orange', edgecolor='black')  # Histograma como barras
     ax.set_title("Tasa de Natalidad por Región")  # Título
     ax.set_xlabel("Regiones")  # Etiqueta eje X
     ax.set_ylabel("Tasa de Natalidad (por cada mil)")  # Etiqueta eje Y
@@ -66,9 +66,9 @@ def grafica_cajas():
     """Genera una gráfica de cajas sobre la producción mensual en fábricas."""
     fig, ax = plt.subplots()
     datos = [
-        [200, 210, 220, 205],  # Producción de fábrica A
-        [190, 195, 200, 185],  # Producción de fábrica B
-        [250, 260, 270, 255],  # Producción de fábrica C
+        [200, 210, 220, 205],  # Producción fábrica A
+        [190, 195, 200, 185],  # Producción fábrica B
+        [250, 260, 270, 255],  # Producción fábrica C
     ]
     ax.boxplot(datos, labels=['Fábrica A', 'Fábrica B', 'Fábrica C'])
     ax.set_title("Producción Mensual por Fábrica")  # Título
@@ -81,8 +81,8 @@ def grafica_dispersion():
     """Genera una gráfica de dispersión sobre los resultados de ventas anuales."""
     np.random.seed(0)
     años = [2018, 2019, 2020, 2021, 2022]  # Años
-    ventas = [500, 600, 700, 650, 750]  # Ventas
-    variaciones = [5, -10, 15, -5, 10]  # Variaciones
+    ventas = [500, 600, 700, 650, 750]  # Ventas en miles
+    variaciones = [5, -10, 15, -5, 10]  # Variaciones (ruido aleatorio)
     ventas_ajustadas = [v + np.random.choice(variaciones) for v in ventas]
 
     fig, ax = plt.subplots()
@@ -94,7 +94,7 @@ def grafica_dispersion():
     return fig
 
 
-# Función para convertir las gráficas a formato Base64 (la Base64 convierte datos binarios en un texto legible)
+# Función para convertir las gráficas a formato Base64
 def obtener_imagen_grafica(fig):
     buf = io.BytesIO()
     fig.savefig(buf, format='png')
@@ -115,6 +115,5 @@ def random_graphs(request):
         'cajas': obtener_imagen_grafica(grafica_cajas()),
         'dispersión': obtener_imagen_grafica(grafica_dispersion()),
     }
-    ´
-# Enviamos las gráficas al template "random_graphs.html"
     return render(request, 'app/random_graphs.html', {'graficas': graficas})
+
