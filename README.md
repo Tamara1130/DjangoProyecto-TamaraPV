@@ -35,7 +35,6 @@ NOTAS:
 
 
 I. Librerias requeridas para ejecutar este programa
-Librerias necesarias a instalar:
 Django
 Numpy
 Matplotlib
