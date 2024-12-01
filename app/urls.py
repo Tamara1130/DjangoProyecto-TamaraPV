@@ -10,7 +10,7 @@ urlpatterns = [
     # URL raíz, asociada con la vista "random_graphs"
     path('', random_graphs, name='random_graphs'),  
     
-    # URL específica para acceder a las gráficas, si se quiere usar un nombre más descriptivo
+    # URL específica para acceder a las gráficas
     path('random-graphs/', random_graphs, name='random_graphs'),
 ]
 
