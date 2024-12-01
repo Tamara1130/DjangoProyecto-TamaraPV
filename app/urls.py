@@ -2,13 +2,15 @@
 # Importamos el módulo "path" de Django para manejar las rutas de la aplicación
 from django.urls import path
 
-# Se importa la vista "random_graphs" desde "app.views", vista la cual está encargada de generar y mostrar las gráficas
-from app.views import random_graphs  
+# Importamos la vista "random_graphs" desde "app.views"
+from app.views import random_graphs
 
-# Se definen las URLs de la aplicación y se asocian con las vistas
+# Definimos las URLs de la aplicación y las asociamos con las vistas correspondientes
 urlpatterns = [
-    # Se define la URL "random-graphs/" que estará asociada con la vista "random_graphs"
-    # Cuando se accede a esta URL se ejecutará la función "random_graphs" en views.py
+    # URL raíz, asociada con la vista "random_graphs"
+    path('', random_graphs, name='random_graphs'),  
+    
+    # URL específica para acceder a las gráficas, si se quiere usar un nombre más descriptivo
     path('random-graphs/', random_graphs, name='random_graphs'),
 ]
 
