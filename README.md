@@ -1,7 +1,6 @@
 # ProyectoDjango_TamaraPenaVillavicencio
 
-Instrucciones de uso del programa:
-
+INSTRUCCIONES DE USO DEL PROGRAMA:
 1. Crea una carpeta en tu equipo y asigna un nombre para guardar el repositorio clonado.
    
 2. Clona el repositorio utilizando la URL desde el botón verde "Code<>“ en GitHub y copia la URL del repositorio.
@@ -29,11 +28,9 @@ Si no sabes qué versión de Python tienes instalada, puedes verificarlo en la t
 6. Revisa la URL que aparece en la terminal una vez que el servidor esté corriendo. Haz clic en la URL que se muestra o copiala y pégala en tu navegador.
 
 7. ¡Listo! La aplicación se estará mostrando en tu navegador.
+8. 
 
-NOTAS:
-- Si en algún momento el comando “python” no funciona correctamente, verifica si tienes Python 3 instalado o usa “python3” como se indicó anteriormente.
-
-
+REQUERIMIENTOS:
 I. Librerias requeridas para ejecutar este programa
 Django
 Numpy
