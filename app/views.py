@@ -82,7 +82,7 @@ def grafica_dispersion():
     np.random.seed(0)
     años = [2018, 2019, 2020, 2021, 2022]  # Años
     ventas = [500, 600, 700, 650, 750]  # Ventas en miles
-    variaciones = [5, -10, 15, -5, 10]  # Variaciones
+    variaciones = [5, 10, 15, 25, 10]  # Variaciones
     ventas_ajustadas = [v + np.random.choice(variaciones) for v in ventas]
 
     # Ajustar los datos a un modelo lineal
