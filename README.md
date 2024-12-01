@@ -1,4 +1,4 @@
-# Proyecto_Django_Tamara_Pe-a_Villavicencio
+# ProyectoDjango_TamaraPenaVillavicencio
 
 Instrucciones de uso del programa:
 
@@ -26,10 +26,35 @@ Si no sabes qué versión de Python tienes instalada, puedes verificarlo en la t
 
    “python3 --version”
 
-
 6. Revisa la URL que aparece en la terminal una vez que el servidor esté corriendo. Haz clic en la URL que se muestra o copiala y pégala en tu navegador.
 
 7. ¡Listo! La aplicación se estará mostrando en tu navegador.
 
 NOTAS:
 - Si en algún momento el comando “python” no funciona correctamente, verifica si tienes Python 3 instalado o usa “python3” como se indicó anteriormente.
+
+
+I. Librerias requeridas para ejecutar este programa
+Librerias necesarias a instalar:
+Django
+Numpy
+Matplotlib
+
+II. ¿Como instalar?
+En la terminal del editor de codigo, usar el comando “pip” para instalar las librerías de la siguiente manera:
+
+Para Django:
+pip install Django
+
+Para Numpy:
+pip install numpy
+
+Para Matplotlib:
+pip install matplotlib
+
+III. Extensiones requeridas en el editor de codigo:
+- Django
+- Pylance
+- Python
+- Python Debugger
+- Python Environment Management
