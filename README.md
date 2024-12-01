@@ -31,7 +31,8 @@ Si no sabes qué versión de Python tienes instalada, puedes verificarlo en la t
 
 
 REQUERIMIENTOS:
-I. Librerias requeridas para ejecutar este programa
+
+I. Librerias requeridas para ejecutar este programa (puedes verlas en el apartado de "requirements.txt" del codigo)
 Django
 Numpy
 Matplotlib
