@@ -82,18 +82,18 @@ def grafica_dispersion():
     np.random.seed(0)
     años = [2018, 2019, 2020, 2021, 2022]  # Años
     ventas = [500, 600, 700, 650, 750]  # Ventas en miles
-    variaciones = [5, -10, 15, -5, 10]  # Variaciones (ruido aleatorio)
+    variaciones = [5, -10, 15, -5, 10]  # Variaciones
     ventas_ajustadas = [v + np.random.choice(variaciones) for v in ventas]
 
     # Ajustar los datos a un modelo lineal
-    coeficientes = np.polyfit(años, ventas_ajustadas, 1)  # Ajuste lineal (grado 1)
+    coeficientes = np.polyfit(años, ventas_ajustadas, 1)  # Ajuste lineal
     linea_ajustada = np.poly1d(coeficientes)  # Generar la línea ajustada
     y_ajustada = linea_ajustada(años)  # Valores de la línea para cada punto de X (años)
 
     # Crear la gráfica
     fig, ax = plt.subplots()
     ax.scatter(años, ventas_ajustadas, color='purple', label="Ventas", s=100)  # Puntos de dispersión
-    ax.plot(años, y_ajustada, color='red', label="Línea de tendencia", linewidth=2)  # Línea ajustada
+    ax.plot(años, y_ajustada, color='red', label="Línea de tendencia", linewidth=2)  # Línea con su debido ajuste
     ax.set_title("Resultados de Ventas Anuales")
     ax.set_xlabel("Año")
     ax.set_ylabel("Ventas (en miles)")
